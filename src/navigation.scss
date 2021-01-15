@@ -1,0 +1,33 @@
+.navigation {
+    background-color: rgba(0, 0, 0, 0.5);
+
+    ul {
+        list-style-type: none;
+        margin: 90px 0 0 0;
+        padding: 0;
+        flex: 1;
+    }
+
+    li {
+        padding: 0 10px;
+        text-shadow: 1px 1px 1px #000;
+
+        a {
+            line-height: 1.5em;
+            padding: 5px 10px;
+            display: block;
+        }
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        vertical-align: top;
+    }
+
+    li a.active {
+        background-color: #fff;
+        color: #000;
+        text-shadow: none;
+    }
+}
