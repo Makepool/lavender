@@ -29,8 +29,8 @@
     .content {
       -ms-grid-column: 2;
       -ms-grid-column-span: 1;
-      -ms-grid-row: 1;
-      -ms-grid-row-span: 4;
+      -ms-grid-row: 2;
+      -ms-grid-row-span: 3;
 
         grid-column: 2 / span 1;
         grid-row: 2 / span 3;
@@ -42,5 +42,110 @@
       -ms-grid-row: 4;
       grid-column: 1;
       grid-row: 4;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+    .description {
+        color: #111;
+        background-color: #fff;
+        margin: -50px 20px 20px 20px;
+        padding: 20px;
+        box-shadow: 0 6px 5px #888;
+        border-top: 18px solid #b03470;
+    }
+}
+
+// @media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
+// @media (min-width: 992px) {
+    .ripoff {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-section {
+        padding: 0 40px 0 40px;
+    }
+
+    .description {
+        margin: -20px;
+        display: -ms-grid;
+        display: grid;
+
+        // gap: 40px 40px;
+        -ms-grid-columns: 1fr 1fr;
+        -ms-grid-rows: auto 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+    }
+
+    .about {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 2;
+
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+
+    .location {
+        -ms-grid-column: 2;
+        // -ms-grid-column-span: 1;
+        -ms-grid-row: 1;
+        // -ms-grid-row-span: 1;
+    }
+
+    .contact-us {
+        -ms-grid-column: 2;
+        // -ms-grid-column-span: 1;
+        -ms-grid-row: 2;
+        // -ms-grid-row-span: 1;
+    }
+
+    .well {
+        background-color: rgba(0,0,0,.7);
+        padding: 20px;
+        border-radius: 0 20px 0 0;
+        // margin-bottom: 40px;
+
+        margin: 20px;
+    }
+}
+
+h2 {
+    margin-top: 0;
+}
+
+h2 {
+    // margin-top: 0 !important;
+
+    &::after {
+        content: '';
+        display: block;
+        height: 3px;
+        box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+        background-color: #b03470;
     }
 }
