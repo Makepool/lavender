@@ -1,39 +1,64 @@
-.navigation {
-    background-color: rgba(0, 0, 0, 0.5);
-
-    ul {
-        list-style-type: none;
-        margin: 90px 0 0 0;
-        padding: 0;
-        flex: 1;
+@media (max-width: 991px) {
+    .navigation {
+        // height: 0;
+        overflow: hidden;
+        transition: height .5s;
+        background-color: #b03470;
     }
 
-    li {
-        padding: 0 10px;
-        text-shadow: 1px 1px 1px #000;
+    nav {
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
 
-        a {
-            line-height: 1.5em;
-            padding: 5px 10px;
-            display: block;
+            a {
+                display: block;
+                padding: 10px 0 10px 20px;
+                border-top: 1px solid #611d3e;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
 
-            &:hover {
-                background-color: rgba(255,255,255,.9);
+@media (min-width: 992px) {
+    .navigation {
+        background-color: rgba(0, 0, 0, 0.5);
+        // overides inline stlye because we always want the nav fully open at desktop resolutions, but to persist state when going back to lower resolutions
+        height: auto !important;
+
+        ul {
+            list-style-type: none;
+            margin: 90px 0 0 0;
+            padding: 0;
+            flex: 1;
+        }
+
+        li {
+            padding: 0 10px;
+            text-shadow: 1px 1px 1px #000;
+
+            a {
+                line-height: 1.5em;
+                padding: 5px 10px;
+                display: block;
+                color: #fff;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: rgba(255,255,255,.9);
+                    color: #000;
+                    text-shadow: none;
+                }
+            }
+
+            a.active {
+                background-color: #fff;
                 color: #000;
                 text-shadow: none;
             }
         }
-    }
-
-    a {
-        color: #fff;
-        text-decoration: none;
-        vertical-align: top;
-    }
-
-    li a.active {
-        background-color: #fff;
-        color: #000;
-        text-shadow: none;
     }
 }

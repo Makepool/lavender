@@ -1,9 +1,9 @@
 import './navigation.scss';
 
-export default function Navigation() {
+export default function Navigation({height, navRef}: any) {
     return (
-        <nav id="nav-outer" className="navigation">
-            <ul id="nav">
+        <nav id="nav-outer" className="navigation" style={{height}}>
+            <ul id="nav" ref={navRef}>
                 <li><a href="/about-the-lavender-room.html" className="active">About us</a></li>
                 <li><a href="/nails.html">Nails</a></li>
                 <li><a href="/waxing.html">Waxing</a></li>

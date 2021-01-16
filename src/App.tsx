@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import './App.css';
 import Header from './header';
 import Navigation from './navigation';
@@ -6,16 +6,15 @@ import Times from './times';
 import Footer from './footer';
 
 function App() {
+  let [height, setHeight] = useState('0');
+  const navRef = useRef(null);
+
   return (
     <div className="App">
-      <Header />
-      {/* <div className="header"></div> */}
-      <Navigation/>
-      {/* <div className="navigation">navigation</div> */}
-      {/* <div className="times">Times</div> */}
-      <Times/>
+      <Header height={height} setHeight={setHeight} navRef={navRef} />
+      <Navigation height={height} navRef={navRef} />
       <div className="content">main shit</div>
-      {/* <div className="footer">footer</div> */}
+      <Times/>
       <Footer />
     </div>
   );

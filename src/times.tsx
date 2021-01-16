@@ -2,8 +2,8 @@ import './times.scss';
 
 export default function Times() {
     return (
-        <div id="desktop-times" className="times">
-            <table id="open-times">
+        <div className="times">
+            <table id="open-times" className="times__inner">
                 <tbody>
                     <tr>
                         <td>Monday</td>
