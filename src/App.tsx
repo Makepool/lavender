@@ -1,22 +1,17 @@
-import React, { useRef, useState } from 'react';
-import './App.css';
-import Header from './header';
-import Navigation from './navigation';
-import Times from './times';
-import Footer from './footer';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './pages/home';
+import About from './pages/about';
+import Waxing from './pages/waxing';
 
 function App() {
-  let [height, setHeight] = useState('0');
-  const navRef = useRef(null);
-
   return (
-    <div className="App">
-      <Header height={height} setHeight={setHeight} navRef={navRef} />
-      <Navigation height={height} navRef={navRef} />
-      <div className="content">main shit</div>
-      <Times/>
-      <Footer />
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about-the-lavender-room" component={About} />
+        <Route exact path="/waxing" component={Waxing} />
+      </Switch>
+    </Router>
   );
 }
 
