@@ -5,7 +5,7 @@ import image from '../images/treatment-room-1534.jpg';
 
 export default function About() {
     return (
-        <PageContainer hero={<img src={image} className="img" alt="herosssssssssssss" />}>
+        <PageContainer hero={<img src={image} className="img" alt="A massage couch" />}>
             <div className="about mobile-background">
                 <div className="well lavender">
                     <h2>About The Lavender Room</h2>

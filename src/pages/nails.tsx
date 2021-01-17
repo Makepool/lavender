@@ -5,7 +5,7 @@ import './nails.scss';
 
 export default function Nails() {
     return (
-        <PageContainer hero={<img src={hero} className="img" alt="1" />}>
+        <PageContainer hero={<img src={hero} className="img" alt="A nail being painted" />}>
             <div className="nails mobile-background">
                 <div>
                     <div className="well">
@@ -15,12 +15,12 @@ export default function Nails() {
 
                     <div className="well  after-prices">
                         <h2>Acrylic nails</h2>
-                        <img src={test} />
+                        <img src={test} alt="placeholder image" />
                         <p>The acrylic nail system is very strong and when done correctly and with proper nail care, they can last a long time and are very robust. Acrylic nails are suitable for most people who want long-term nail enhancement.</p>
                         <p>The removal of acrylic nails is a soak-off method using acetone.</p>
 
                         <h2>Gel nails</h2>
-                        <img src={test} />
+                        <img src={test} alt="placeholder image" />
                         <p>The gel nail system is more suited to someone who wants a temporary nail enhancement, as it is not quite as robust as the acrylic nail system but the products used don't have the strong odours of acrylic. Again, when the correct after care procedures are followed, the nails will last a long time and still look beautiful between in fills*</p>
                         <p>There are 2 different types of gel nail system;</p>
                         <p>Hard gels are better for nail extensions as they are the strongest option and can be in filled in the same way as acrylic nails.</p>
@@ -29,7 +29,7 @@ export default function Nails() {
                         <p>The removal process of soft/soak-off gel nails is traditionally a soak-off method using acetone.</p>
 
                         <h2>Silk/Fibreglass nails</h2>
-                        <img src={test} />
+                        <img src={test} alt="placeholder image" />
                         <p>This type of nail system is most suitable for short term wear, for example; a party, wedding or weekend away. A silk or fibreglass strip is applied to your nails along with a strong resin and the nails can either be painted or buffed to a natural shine. This nail system looks the most natural but lacks the strength of acrylic and hard gel.</p>
                         <p>The removal of silk/fibreglass nails is a soak off method using acetone.</p>
                         <p>NB To avoid damage to the natural nails it is always advised you have your acrylic/gel/silk nails removed by your nail technician.</p>
