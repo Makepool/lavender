@@ -1,0 +1,19 @@
+.about {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.location {
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+}
+
+.contact-us {
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
+}
