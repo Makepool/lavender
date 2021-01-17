@@ -16,8 +16,9 @@ header {
     }
 
     a {
-        // background-image: url('/images/lavender-room-logo.png');
-        // background-image: url('../images/lavender-room-logo.png');
+        background-image: url('/images/lavender-room-logo-x2.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
         width: 226px;
         height: 50px;
         display: inline-block;

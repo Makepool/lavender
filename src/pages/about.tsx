@@ -6,7 +6,7 @@ import image from '../images/treatment-room-1534.jpg';
 export default function About() {
     return (
         <PageContainer hero={<img src={image} className="img" alt="herosssssssssssss" />}>
-            <div className="about">
+            <div className="about mobile-background">
                 <div className="well lavender">
                     <h2>About The Lavender Room</h2>
                     <p>I am a fully qualified Beauty Therapist and Nail Technician based in Nottinghamshire. I trained as a Beauty Therapist at Chestefield College where I achieved my NVQ Level 3 Beauty Therapy and also my VTCT Level 3 Diplomas in Aromatheraphy and Stone Therapy. My qualifications as a Nail Technician were achieved at Pinks Training Academy in Derby.</p>

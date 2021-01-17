@@ -46,6 +46,17 @@
 }
 
 @media (max-width: 767px) {
+    .mobile-background {
+        position: relative;
+        top: -50px;
+        color: #111;
+        background-color: #fff;
+        margin: 0px 20px -29px 20px;
+        padding: 20px;
+        box-shadow: 0 6px 5px #888;
+        border-top: 18px solid #b03470;
+    }
+
     .img {
         display: block;
         max-width: 100%;
@@ -56,7 +67,7 @@
     .hero {
         position: relative;
 
-        &::after {
+        &::before {
             content: '';
             display: block;
             height: 10px;
