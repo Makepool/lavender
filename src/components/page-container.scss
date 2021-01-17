@@ -46,17 +46,6 @@
 }
 
 @media (max-width: 767px) {
-    .description {
-        position: relative;
-        top: -50px;
-        color: #111;
-        background-color: #fff;
-        margin: 0px 20px -29px 20px;
-        padding: 20px;
-        box-shadow: 0 6px 5px #888;
-        border-top: 18px solid #b03470;
-    }
-
     .img {
         display: block;
         max-width: 100%;
@@ -64,7 +53,7 @@
         height: auto;
     }
 
-    .ripoff {
+    .hero {
         position: relative;
 
         &::after {
@@ -92,20 +81,8 @@
 }
 
 @media (min-width: 768px) {
-    .ripoff {
+    .hero {
         display: none;
-    }
-
-    .description {
-        margin: -20px -20px 20px -20px;
-        display: -ms-grid;
-        display: grid;
-
-        // gap: 40px 40px;
-        -ms-grid-columns: 1fr 1fr;
-        -ms-grid-rows: auto 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 1fr;
     }
 
     .well {

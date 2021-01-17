@@ -5,7 +5,7 @@ import Footer from '../footer';
 import { useRef, useState } from 'react';
 import './page-container.scss';
 
-export default function PageContainer({children}: any) {
+export default function PageContainer({children, hero}: any) {
   let [height, setHeight] = useState('0');
   const navRef = useRef(null);
 
@@ -14,7 +14,14 @@ export default function PageContainer({children}: any) {
       <Header height={height} setHeight={setHeight} navRef={navRef} />
       <Navigation height={height} navRef={navRef} />
       <div className="content">
-        {children}
+        <div className="main-section">
+          <div className="hero">
+            {hero}
+          </div>
+          <div className="description">
+            {children}
+          </div>
+        </div>
       </div>
       <Times/>
       <Footer/>
