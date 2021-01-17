@@ -137,3 +137,38 @@ strong {
 a {
     color: #b03470;
 }
+
+input[type=email], input[type=tel], input[type=text], textarea {
+    width: 100%;
+    display: block;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    padding: 4px 6px;
+    font-size: 14px;
+}
+
+input[type=submit] {
+    width: 100%;
+    margin-top: 10px;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+    background-color: #b03470;
+    background-image: linear-gradient(to bottom,#b03470,#7b244e);
+    background-repeat: repeat-x;
+    border: none;
+    border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) #b3b3b3;
+    display: inline-block;
+    padding: 4px 12px;
+    margin-bottom: 0;
+    font-size: 1.2em;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+}
+
+@media (max-width: 991px) {
+    input[type=submit] {
+        height: 40px;
+    }
+}

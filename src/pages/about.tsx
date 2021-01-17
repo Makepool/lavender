@@ -36,24 +36,24 @@ export default function About() {
                         <h2>Contact us</h2>
                         <p>For appointments or any queries, contact us on <strong itemProp="telephone">0754 4190 236</strong> or use the form below.</p>
 
-                        {/* <form id="form" name="form1" action="contact-the-lavender-room.php" method="post">
+                        <form id="form" name="form1" action="contact-the-lavender-room.php" method="post">
                             <label htmlFor="name">* Name:</label>
-                            <input type="text" name="name" required={true} autoComplete="name">
+                            <input type="text" name="name" required={true} autoComplete="name"/>
 
                             <label htmlFor="email">Email:</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email"/>
 
                             <label htmlFor="phone">Phone:</label>
-                            <input type="tel" name="phone" id="phone">
+                            <input type="tel" name="phone" id="phone"/>
 
                             <label htmlFor="message">* Message:</label>
                             <textarea name="message" rows={5} required={true}></textarea>
 
-                            <input type="submit" value="Send">
+                            <input type="submit" value="Send"/>
 
-                            <input type="hidden" name="oldtime" value="22:8:40">
-                            <input type="hidden" name="newtime" value="22:8:40">
-                        </form> */}
+                            <input type="hidden" name="oldtime" value="22:8:40"/>
+                            <input type="hidden" name="newtime" value="22:8:40"/>
+                        </form>
 
                         <p>Visit us on <a href="https://www.facebook.com/lavenderroom.homespa">Facebook</a>.</p>
                     </div>
