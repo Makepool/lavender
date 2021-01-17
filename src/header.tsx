@@ -1,14 +1,15 @@
 import './header.scss';
 
+interface Props {
+    height: string;
+    setHeight: Function;
+    navRef: React.MutableRefObject<any>;
+}
 
-
-export default function Header({height, setHeight, navRef}: any) {
+export default function Header({height, setHeight, navRef}: Props) {
     function toggleNavigation() {
-        if (height === '0') {
-            setHeight(`${navRef.current.offsetHeight}px`);
-        } else {
-            setHeight('0');
-        }
+        const heightString = height === '0' ? `${navRef.current.offsetHeight}px` : '0';
+        setHeight(heightString);
     }
 
     return (

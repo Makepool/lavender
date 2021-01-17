@@ -3,8 +3,19 @@ import './navigation.scss';
 import cn from 'classnames';
 import { Link } from 'react-router-dom';
 
-export default function Navigation({height, navRef, loc}: any) {
-    const pages = [
+interface Page {
+    id: number;
+    path: string;
+    name: string;
+}
+
+interface Props {
+    height: string;
+    navRef: React.MutableRefObject<any>;
+}
+
+export default function Navigation({height, navRef}: Props) {
+    const pages: Page[] = [
         {id: 1, path: '/about-the-lavender-room', name: 'About us'},
         {id: 2, path: '/nails', name: 'Nails'},
         {id: 3, path: '/waxing', name: 'Waxing'},
@@ -20,19 +31,11 @@ export default function Navigation({height, navRef, loc}: any) {
     return (
         <nav id="nav-outer" className="navigation" style={{height}}>
             <ul id="nav" ref={navRef}>
-                {pages.map((page: any) => (
+                {pages.map((page: Page) => (
                     <li key={page.id}>
                         <Link to={page.path} className={cn({active: location.pathname === page.path})}>{page.name}</Link>
                     </li>
                 ))}
-                {/* <li><a href="/about-the-lavender-room" className="active">About us</a></li>
-                <li><a href="/nails.html">Nails</a></li>
-                <li><a href="/waxing.html">Waxing</a></li>
-                <li><a href="/spray-tan.html">Spray tanning</a></li>
-                <li><a href="/facials-and-skincare.html">Facials and skincare</a></li>
-                <li><a href="/hands-and-feet.html">Hands and feet</a></li>
-                <li><a href="/make-up.html">Make-up</a></li>
-                <li><a href="/eye-treatments.html">Eye treatments</a></li> */}
             </ul>
         </nav>
     );

@@ -5,7 +5,12 @@ import Footer from '../footer';
 import { useRef, useState } from 'react';
 import './page-container.scss';
 
-export default function PageContainer({children, hero}: any) {
+interface Props {
+  children: JSX.Element;
+  hero: JSX.Element;
+}
+
+export default function PageContainer({children, hero}: Props) {
   let [height, setHeight] = useState('0');
   const navRef = useRef(null);
 

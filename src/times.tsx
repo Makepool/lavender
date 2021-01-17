@@ -1,6 +1,12 @@
 import './times.scss';
 import cn from 'classnames';
 
+interface Day {
+    id: number;
+    day: string;
+    times: string;
+}
+
 export default function Times() {
     const date = new Date();
     let int = date.getDay() - 1;
@@ -8,7 +14,7 @@ export default function Times() {
       int = 6;
     }
 
-    const days = [
+    const days: Day[] = [
         {id: 0, day: 'Monday', times: '9am‑8pm'},
         {id: 1, day: 'Tuesday', times: '9am‑6pm'},
         {id: 2, day: 'Wednesday', times: '9am‑6pm'},
@@ -22,7 +28,7 @@ export default function Times() {
         <div className="times">
             <table id="open-times" className="times__inner">
                 <tbody>
-                    {days.map((page: any) => (
+                    {days.map((page: Day) => (
                         <tr key={page.id} className={cn({today: int === page.id})}>
                             <td>{page.day}</td>
                             <td>{page.times}</td>
