@@ -36,6 +36,7 @@ export default function About() {
                         <h2>Contact us</h2>
                         <p>For appointments or any queries, contact us on <strong itemProp="telephone">0754 4190 236</strong> or use the form below.</p>
 
+                        {/* Only here for presentation purposes and isn't how you'd do a form in React */}
                         <form id="form" name="form1" action="contact-the-lavender-room.php" method="post">
                             <label htmlFor="name">* Name:</label>
                             <input type="text" name="name" required={true} autoComplete="name"/>
