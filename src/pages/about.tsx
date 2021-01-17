@@ -1,12 +1,13 @@
 
 import PageContainer from '../components/page-container';
+import image from '../images/treatment-room-1534.jpg';
 
 export default function About() {
     return (
         <PageContainer>
             <div className="main-section">
                 <div className="ripoff">
-                    <img src="images/treatment-room-1534.jpg" className="img" />
+                    <img src={image} className="img" alt="hero" />
                 </div>
                 <div className="description">
                     <div className="well about">
