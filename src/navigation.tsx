@@ -16,14 +16,12 @@ interface Props {
 
 export default function Navigation({height, navRef}: Props) {
     const pages: Page[] = [
-        {id: 1, path: '/about-the-lavender-room', name: 'About us'},
+        {id: 1, path: '/', name: 'About us'},
         {id: 2, path: '/nails', name: 'Nails'},
         {id: 3, path: '/waxing', name: 'Waxing'},
         {id: 4, path: '/spray-tan', name: 'Spray tanning'},
         {id: 5, path: '/acials-and-skincare', name: 'Facials and skincare'},
-        {id: 6, path: '/hands-and-feet', name: 'Hands and feet'},
-        {id: 7, path: '/make-up', name: 'Make-up'},
-        {id: 8, path: '/eye-treatments', name: 'Eye treatments'}
+        {id: 6, path: '/hands-and-feet', name: 'Hands and feet'}
     ];
 
     let location = useLocation();

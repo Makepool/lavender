@@ -160,3 +160,9 @@ input[type=submit] {
         height: 40px;
     }
 }
+
+@media (max-width: 991px) and (min-width: 768px) {
+    body {
+        background-image: url('../images/closeup-nails-991.jpg');
+    }
+}
